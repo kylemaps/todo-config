@@ -1,0 +1,18 @@
+apiVersion: batch/v1
+kind: CronJob
+metadata:
+  name: add-random-todo
+  # namespace: project-todo
+spec:
+  schedule: "0 0 */2 * *" # Runs once every two days at midnight
+  jobTemplate:
+    spec:
+      template:
+        spec:
+          containers:
+            - name: add-todo
+              image: kylmps/todo-read-wiki:1.1
+              env:
+                - name: BACKEND_URL
+                  value: "http://todo-backend-svc:3001/todos" # Backend service
+          restartPolicy: OnFailure

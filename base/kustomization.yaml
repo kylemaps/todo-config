@@ -1,0 +1,14 @@
+apiVersion: kustomize.config.k8s.io/v1beta1
+kind: Kustomization
+resources:
+  - backend-deployment.yaml
+  - frontend-deployment.yaml
+  - broadcaster-deployment.yaml
+  - db-statefulset.yaml
+  - db-service.yaml
+  - db-cronjob.yaml
+  - services.yaml
+  - route.yaml
+  - broadcaster-secrets.yaml
+  - db-configmap.yaml
+  # - db-secret.enc.yaml

@@ -1,0 +1,5 @@
+apiVersion: batch/v1
+kind: CronJob
+metadata:
+  name: add-random-todo
+$patch: delete

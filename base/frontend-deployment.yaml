@@ -1,0 +1,42 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: todo-dep
+  # namespace: project-todo
+spec:
+  replicas: 1
+  strategy:
+    type: Recreate # Prevents PVC mount issues with ReadWriteOnce
+  selector:
+    matchLabels:
+      app: todo
+  template:
+    metadata:
+      labels:
+        app: todo
+    spec:
+      containers:
+        - name: todo
+          # image: IMAGE_NAME:IMAGE_TAG # Placeholder for CI/CD
+          image: kylmps/todo:5.9
+          ports:
+            - containerPort: 3000
+          readinessProbe:
+            httpGet:
+              path: /todo
+              port: 3000
+            initialDelaySeconds: 5
+            periodSeconds: 10
+          livenessProbe:
+            httpGet:
+              path: /
+              port: 3000
+            initialDelaySeconds: 10
+            periodSeconds: 10
+          volumeMounts:
+            - name: todo-shared-path
+              mountPath: /usr/src/app/todolist
+      volumes:
+        - name: todo-shared-path
+          persistentVolumeClaim:
+            claimName: todo-claim
