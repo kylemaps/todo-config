@@ -16,7 +16,7 @@ spec:
       containers:
         - name: todo-backend
           # image: kylmps/todo-backend:4.3
-          image: gcr.io/gke-project/todo-backend:latest # Placeholder for CI/CD
+          image: todo-backend
           readinessProbe:
             httpGet:
               path: /healthz

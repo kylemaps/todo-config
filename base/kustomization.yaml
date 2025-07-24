@@ -10,4 +10,13 @@ resources:
   - services.yaml
   - route.yaml
   - db-configmap.yaml
-  # - db-secret.enc.yaml
+images:
+- name: todo-backend
+  newName: gcr.io/gke-project/todo-backend
+  newTag: latest
+- name: todo-frontend
+  newName: gcr.io/gke-project/todo-frontend
+  newTag: latest
+- name: broadcaster
+  newName: gcr.io/gke-project/broadcaster
+  newTag: latest
