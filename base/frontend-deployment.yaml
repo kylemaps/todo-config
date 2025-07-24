@@ -17,8 +17,8 @@ spec:
     spec:
       containers:
         - name: todo
-          # image: IMAGE_NAME:IMAGE_TAG # Placeholder for CI/CD
-          image: kylmps/todo:5.9
+          # image: kylmps/todo:5.9
+          image: gcr.io/gke-project/todo-frontend:latest # Placeholder for CI/CD
           ports:
             - containerPort: 3000
           readinessProbe:

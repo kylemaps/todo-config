@@ -14,7 +14,8 @@ spec:
     spec:
       containers:
         - name: broadcaster
-          image: kylmps/broadcaster:1.0 # Replace with your Docker Hub username
+          # image: kylmps/broadcaster:1.0 # Replace with your Docker Hub username
+          image: gcr.io/gke-project/broadcaster:latest # Placeholder for CI/CD
           env:
             - name: NATS_URL
               value: "nats://my-nats:4222"

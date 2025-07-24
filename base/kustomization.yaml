@@ -9,6 +9,5 @@ resources:
   - db-cronjob.yaml
   - services.yaml
   - route.yaml
-  - broadcaster-secrets.yaml
   - db-configmap.yaml
   # - db-secret.enc.yaml
