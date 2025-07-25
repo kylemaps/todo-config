@@ -21,6 +21,9 @@ spec:
           image: todo-frontend
           ports:
             - containerPort: 3000
+          env:
+            - name: BACKEND_URL
+              value: "http://todo-backend-svc:3001/todos"
           readinessProbe:
             httpGet:
               path: /todo
