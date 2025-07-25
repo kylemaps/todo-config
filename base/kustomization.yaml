@@ -10,6 +10,7 @@ resources:
   - services.yaml
   - route.yaml
   - db-configmap.yaml
+  - frontend-pvc.yaml
 images:
 - name: todo-backend
   newName: gcr.io/dwk-gke-458706/todo-backend
