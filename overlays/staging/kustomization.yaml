@@ -16,3 +16,6 @@ images:
 - name: broadcaster
   newName: gcr.io/dwk-gke-458706/broadcaster
   newTag: staging-b287111
+- name: todo-backend
+  newName: gcr.io/dwk-gke-458706/todo-backend
+  newTag: staging-578afa5
