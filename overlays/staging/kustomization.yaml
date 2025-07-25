@@ -6,19 +6,7 @@ resources:
 patchesStrategicMerge:
 - broadcaster-patch.yaml
 - route-patch.yaml
+- broadcaster-image-patch.yaml
+- backend-image-patch.yaml
+- frontend-image-patch.yaml
 namespace: staging
-patches:
-- path: db-cronjob-patch.yaml
-  target:
-    kind: CronJob
-    name: add-random-todo
-images:
-- name: broadcaster
-  newName: kylmps/broadcaster
-  newTag: "1.0"
-- name: todo-backend
-  newName: kylmps/todo-backend
-  newTag: "4.3"
-- name: todo-frontend
-  newName: kylmps/todo-frontend
-  newTag: "5.9"
