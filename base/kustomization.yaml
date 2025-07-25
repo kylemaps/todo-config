@@ -12,8 +12,8 @@ resources:
   - db-configmap.yaml
 images:
 - name: todo-backend
-  newName: gcr.io/gke-project/todo-backend
+  newName: gcr.io/dwk-gke-458706/todo-backend
 - name: todo-frontend
-  newName: gcr.io/gke-project/todo-frontend
+  newName: gcr.io/dwk-gke-458706/todo-frontend
 - name: broadcaster
-  newName: gcr.io/gke-project/broadcaster
+  newName: gcr.io/dwk-gke-458706/broadcaster
