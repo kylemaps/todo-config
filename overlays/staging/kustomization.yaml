@@ -15,4 +15,4 @@ patches:
 images:
 - name: broadcaster
   newName: gcr.io/dwk-gke-458706/broadcaster
-  newTag: staging-44a67ab
+  newTag: staging-b287111
