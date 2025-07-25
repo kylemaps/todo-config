@@ -15,7 +15,7 @@ patches:
 images:
 - name: broadcaster
   newName: gcr.io/dwk-gke-458706/broadcaster
-  newTag: staging-b287111
+  newTag: staging-eb0d48a
 - name: todo-backend
   newName: gcr.io/dwk-gke-458706/todo-backend
   newTag: staging-578afa5
