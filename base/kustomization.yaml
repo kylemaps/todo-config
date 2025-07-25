@@ -13,7 +13,10 @@ resources:
 images:
 - name: todo-backend
   newName: gcr.io/dwk-gke-458706/todo-backend
+  newTag: staging-initial
 - name: todo-frontend
   newName: gcr.io/dwk-gke-458706/todo-frontend
+  newTag: staging-initial
 - name: broadcaster
   newName: gcr.io/dwk-gke-458706/broadcaster
+  newTag: staging-initial
