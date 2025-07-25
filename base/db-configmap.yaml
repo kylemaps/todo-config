@@ -6,5 +6,6 @@ metadata:
 data:
   POSTGRES_DB: todo_db
   POSTGRES_USER: todo_user
-  POSTGRES_HOST: postgres-svc.default.svc.cluster.local 
+  POSTGRES_HOST: postgres-svc.staging.svc.cluster.local # Corrected for staging namespace
+  # OLD: POSTGRES_HOST: postgres-svc.default.svc.cluster.local 
   # POSTGRES_HOST: postgres-svc.project-todo.svc.cluster.local
