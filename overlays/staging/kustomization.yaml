@@ -10,3 +10,7 @@ patchesStrategicMerge:
 - backend-image-patch.yaml
 - frontend-image-patch.yaml
 namespace: staging
+images:
+- name: todo-frontend
+  newName: gcr.io/dwk-gke-458706/todo-frontend
+  newTag: staging-9a4fb26
