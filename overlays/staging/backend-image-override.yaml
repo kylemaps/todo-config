@@ -7,4 +7,4 @@ spec:
     spec:
       containers:
       - name: todo-backend
-        image: gcr.io/dwk-gke-458706/todo-backend:staging-578afa5 # Overriding image for staging
+        image: gcr.io/dwk-gke-458706/todo-backend:staging-578afa5
