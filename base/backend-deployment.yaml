@@ -15,7 +15,7 @@ spec:
     spec:
       containers:
         - name: todo-backend
-          # image: kylmps/todo-backend:4.3
+          # image: kylmps/todo-backend:5
           image: todo-backend
           readinessProbe:
             httpGet:

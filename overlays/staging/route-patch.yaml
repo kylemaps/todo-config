@@ -4,4 +4,4 @@ metadata:
   name: todo-route
 spec:
   hostnames:
-  - "staging.34.36.101.217.nip.io"
+  - "staging.34.49.234.79.nip.io"

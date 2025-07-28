@@ -17,7 +17,7 @@ spec:
     spec:
       containers:
         - name: todo
-          # image: kylmps/todo:5.9
+          # image: kylmps/todo:6
           image: todo-frontend
           ports:
             - containerPort: 3000
