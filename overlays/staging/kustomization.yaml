@@ -20,4 +20,4 @@ images:
   newTag: staging-b68eb11
 - name: todo-frontend
   newName: gcr.io/dwk-gke-458706/todo-frontend
-  newTag: staging-ead13fa
+  newTag: staging-02c50c3
