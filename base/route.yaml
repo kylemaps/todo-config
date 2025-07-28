@@ -5,6 +5,7 @@ metadata:
 spec:
   parentRefs:
     - name: my-gateway
+      namespace: default
   hostnames:
   - "HOSTNAME_PLACEHOLDER" # This will be patched by the overlays
   rules:
