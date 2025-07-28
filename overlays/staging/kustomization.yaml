@@ -13,11 +13,8 @@ patches:
     name: add-random-todo
 images:
 - name: broadcaster
-  newName: gcr.io/dwk-gke-458706/broadcaster
-  newTag: staging-initial
+  newName: gcr.io/dwk-gke-458706/broadcaster:staging-b287111
 - name: todo-backend
-  newName: gcr.io/dwk-gke-458706/todo-backend
-  newTag: staging-initial
+  newName: gcr.io/dwk-gke-458706/todo-backend:staging-578afa5
 - name: todo-frontend
-  newName: gcr.io/dwk-gke-458706/todo-frontend
-  newTag: staging-initial
+  newName: gcr.io/dwk-gke-458706/todo-frontend:staging-e196e2c
